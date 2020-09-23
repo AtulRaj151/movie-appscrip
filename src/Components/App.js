@@ -15,13 +15,17 @@ class App extends React.Component {
         {/* add component navbar */}
         <Navbar />
         {/*  add component Moviecard from search result */}
-        {search.map((movie, index) => (
-          <MovieCard
-            movie={movie}
-            key={`movies-${index}`}
-            dispatch={this.props.dispatch}
-          />
-        ))}
+        {search.length !== 0 ? (
+          search.map((movie, index) => (
+            <MovieCard
+              movie={movie}
+              key={`movies-${index}`}
+              dispatch={this.props.dispatch}
+            />
+          ))
+        ) : (
+          <h1>Movies not Found</h1>
+        )}
       </div>
     );
   }
