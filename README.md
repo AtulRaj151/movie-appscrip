@@ -26,6 +26,9 @@
               - It stores the new changes of updated state
         - Components
               - It contains all the component of the application like Navbar SearchDisplay and MovieCard
+              - Navbar
+              - App
+              - MovieCard
          
  - Hosting : GitHub Pages  https://atulraj151.github.io/movie-appscrip/
  
