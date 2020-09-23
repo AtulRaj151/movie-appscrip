@@ -14,10 +14,10 @@
  
 ## Tech Stack
  - FrontEnd: ReactJs
- - Hosting : GitHub Pages
+ - Hosting : GitHub Pages  https://atulraj151.github.io/movie-appscrip/
  
  ###### link
-  click here :+1: https://atulraj151.github.io/movie-appscrip/
+  click here :+1:
  
  
 
