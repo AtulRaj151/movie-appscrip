@@ -12,6 +12,9 @@
  
  > React and Redux have been used to pass the state to Components 
  
+## Tech Stack
+ - FrontEnd: ReactJs
+ - Hosting : GitHub Pages
  
  ###### link
   click here :+1: https://atulraj151.github.io/movie-appscrip/
