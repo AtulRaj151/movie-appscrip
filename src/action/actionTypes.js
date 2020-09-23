@@ -1,1 +1,1 @@
-export const ADD_SEARCH_RESULT = "ADD_SEARCH_RESULT";
+export const AdD_SEARCH_RESULT = "ADD_SEARCH_RESULT";
