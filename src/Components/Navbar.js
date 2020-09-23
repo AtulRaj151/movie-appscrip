@@ -9,14 +9,16 @@ class Navbar extends React.Component {
       searchText: "",
     };
   }
-
+  //  a handle change function so the each time when you type we will get result
   handleChange = (e) => {
     this.setState({
       searchText: e.target.value,
     });
+    //  dispact the action
 
     this.props.dispatch(handleMovieSearch(e.target.value));
   };
+  //    if we click on search button then it return the required result
   handleSearch = () => {
     const { searchText } = this.state;
     this.props.dispatch(handleMovieSearch(searchText));

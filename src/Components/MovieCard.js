@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class MovieCard extends Component {
   render() {
+    //   destructure the movie component
     const { movie } = this.props;
     return (
       <div>

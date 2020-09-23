@@ -7,6 +7,7 @@ import { configureStore } from "./store";
 const store = configureStore();
 console.log(store);
 ReactDOM.render(
+  // use provider to pass store to each components
   <Provider store={store}>
     <React.StrictMode>
       <App />

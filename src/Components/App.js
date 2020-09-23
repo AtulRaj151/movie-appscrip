@@ -7,12 +7,14 @@ class App extends React.Component {
   // console.log("Store", search);
 
   render() {
+    //  destructure the search value
     const { search } = this.props.search;
     // console.log("search is here ", search);
     return (
       <div className="App">
+        {/* add component navbar */}
         <Navbar />
-
+        {/*  add component Moviecard from search result */}
         {search.map((movie, index) => (
           <MovieCard
             movie={movie}
@@ -24,7 +26,7 @@ class App extends React.Component {
     );
   }
 }
-
+//  map state to props so that we can connect this component to store
 function mapStateToProps(state) {
   return {
     movie: state.movie,
@@ -32,4 +34,5 @@ function mapStateToProps(state) {
   };
 }
 
+//  wrapper function that takes states and return the wrapper components
 export default connect(mapStateToProps)(App);
