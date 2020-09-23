@@ -3,7 +3,7 @@ import { AdD_SEARCH_RESULT } from "./actionTypes";
 export function handleMovieSearch(movie) {
   //   const url = `https://api.themoviedb.org/3/movie/550?api_key=c23b9b937869901715c463911583ed92&query=${movie}`;
   const url = `https://api.themoviedb.org/3/search/movie?api_key=c23b9b937869901715c463911583ed92&query=${movie}`;
-  //   here it returns dispact the action
+  //   here it returns dispact the movie into reducer
   return function (dispatch) {
     fetch(url)
       .then((response) => response.json())
